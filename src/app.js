@@ -12,5 +12,5 @@ app.get('/country', cors(corsOptions), Country)
 
 
 app.listen(process.env.SERVER_PORT, () => {
-    console.log(logTitleMessage(`Running on port ${process.env.SERVER_PORT}`));
+    console.log(`Running on port ${process.env.SERVER_PORT}`);
 })
