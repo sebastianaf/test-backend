@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 192.168.1.50:5710
--- Tiempo de generación: 25-11-2021 a las 22:33:10
+-- Tiempo de generación: 25-11-2021 a las 23:20:11
 -- Versión del servidor: 10.5.8-MariaDB-1:10.5.8+maria~focal
 -- Versión de PHP: 7.4.22
 
@@ -20,6 +20,14 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `testDB`
 --
+
+DELIMITER $$
+--
+-- Procedimientos
+--
+CREATE DEFINER=`mielcali`@`%` PROCEDURE `selectCountry` ()  select * from country$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
